@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Technical Documentation</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="navbar">
+  <header>Java Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#Java_for_beginners">Java for beginners</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Dynamically_vs_Statically">Dynamically vs Statically</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Java_Variables">Java Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_Variables">Declaring variables</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_Scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#Java_If..._Else">Java If... Else</a>
+    </li>
+    <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+    <li>
+      <a class="nav-link" href="#Methods"
+        >Methods</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Java is a programming language created by James Gosling from Sun Microsystems (Sun) in 1991. The target of Java is to write a program once and then run this program on multiple operating systems. The first publicly available version of Java (Java 1.0) was released in 1995. Sun Microsystems was acquired by the Oracle Corporation in 2010. Oracle has now the steermanship for Java. In 2006 Sun started to make Java available under the GNU General Public License (GPL). Oracle continues this project called OpenJDK.
+      </p>
+
+      <p>
+       Java is defined by a specification and consists of a programming language, a compiler, core libraries and a runtime (Java virtual machine) The Java runtime allows software developers to write program code in other languages than the Java programming language which still runs on the Java virtual machine. The Java platform is usually associated with the Java virtual machine and the Java core libraries.
+        The Java language was designed with the following properties:
+      </p>
+      <ul>
+        <li>
+          The Java language was designed with the following properties:
+        </li>
+        <li>
+          SObject-orientated programming language: Except the primitive data types, all elements in Java are objects.
+        </li>
+         <li>
+         Interpreted and compiled language: Java source code is transferred into the bytecode format which does not depend on the target platform. These bytecode instructions will be interpreted by the Java Virtual machine (JVM). 
+        </li>
+         <li>
+          Strongly-typed programming language: Java is strongly-typed, e.g., the types of the used variables must be pre-defined and conversion to other objects is relatively strict, e.g., must be done in most cases by the programmer.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Java_for_beginners">
+    <header>Java for beginners</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          Java has been around for such a long time, so it’s really well established. There are a lot of great books, online resources.
+        </li>
+        <li>There are probably more Java programmers than any other type of programmer in the world, so a lot of people already know Java and it’s easy to find people who can help you out and mentor you..</li>
+        <li>
+          Java derives its syntax from C, and lots of other languages also derive their syntax from C, so if you learn Java, then learning a language like Javascript, C#, or C++ is much easier.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Dynamically_vs_Statically">
+    <header>Dynamically vs Statically</header>
+    <article>
+      <p>
+       Java is a statically typed language, whereas Ruby, Python, and JavaScript are dynamically typed languages. People tend to get pretty passionate about the difference between statically typed and dynamically typed languages.
+       Dynamically Typed: If you’ve had any exposure to programming, you’ll be familiar with the idea of a variable. In a dynamically typed language like Ruby or JavaScript, you can declare a variable without having to say what type of data you want to put into that variable. The variable is dynamic; it can be anything – a number or a sentence etc.
+        
+        Statically Typed: When dealing with data in a statically typed languages like Java, we have to declare what each variable will hold. For example, this variable will hold numbers; that other variable will hold text, and another variable will hold dates, and so on. This means that a statically typed language has a bit more structure to it. There are certain mistakes a programmer can make, which can be caught by the development tools we use with Java before you even run the program.
+      </p>
+
+      <p>
+       I tend to prefer statically typed languages. I think it’s good for somebody to learn a statically typed language first, because there is an extra layer of code that you need to think about, and it makes variables more explicit. In my experience, it’s easier for people who have learned a statically-typed language first to then learn a dynamically-typed language, than it is the other way around
+      </p>
+      <p>
+        JavaScript is a very free-form language compared to Java. You do not
+        have to declare all variables, classes, and methods. You do not have to
+        be concerned with whether methods are public, private, or protected, and
+        you do not have to implement interfaces. Variables, parameters, and
+        function return types are not explicitly typed.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      To get started with writing Java, open your IDE or text editor and write your
+      first "Hello world" Java code:
+      <code
+        >class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+      </code>
+
+      Select the code in the pad and hit Ctrl+R to watch it unfold in your
+      browser!
+    </article>
+  </section>
+  <section class="main-section" id="Java_Variables">
+    <header>Java Variables</header>
+    <p>
+     
+      
+    </p>
+    <p>
+    "Java letters" is the term given to the acceptable letters that can be used for an identifier. This includes not only regular alphabet letters but also symbols, which just includes, without exception, the underscore (_) and dollar sign ($). Because
+     Java letters and digits can be anything from the Unicode character set, which means characters in Chinese, Japanese, and other languages can be used.
+      Spaces are not acceptable, so an underscore can be used instead.
+    </p>
+    <p>
+      Since the list of SQL keywords may, at some point in the future, include other SQL words (and identifiers can't be spelled the same as a keyword), it's usually not recommended that you use an SQL keyword as an identifier.
+
+    </p>
+  </section>
+  <section class="main-section" id="Declaring_Variables">
+    <header>Declaring variables</header>
+    <article>
+     To create a variable, you must specify the type and assign it a value:
+      <p>
+        With the keyword String. For example, <code>type variableName = value;</code> variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+      </p>
+      <p>
+        We will Create a variable called name of type String and assign it the value "Alfred": <code>String name = "Alfred";
+System.out.println(name);.</code> This
+      
+        warning. You should always include the semicolon(;).
+      </p>
+      <p>
+        With the keyword int. For example,<code> int myNum = 15;
+System.out.println(myNum);</code> You can also declare a variable without assigning the value, and assign the value later:
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_Scope">
+    <header>Variable scope</header>
+    <article>
+      <p>
+       There are three types of variables in java, depending on their scope:
+        <li>local variables- a variable that's declared within the body of a method.</li>
+         <li>Instance variables-are declared in a class, but outside a method</li>
+         <li>Class variables - any variable declared with the static modifier of which a single copy exists, regardless of how many instances of the class exist.</li>
+      </p>
+
+      <p>
+       A block of code refers to all of the code between curly braces {}. Variables declared inside blocks of code are only accessible by the code between the curly braces, which follows the line in which the variable was declared:
+      
+      </p>
+      <code>public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    { // This is a block
+
+      // Code here CANNOT use x
+
+      int x = 100;
+
+      // Code here CAN use x
+      System.out.println(x);
+
+   } // The block ends here
+
+  // Code here CANNOT use x
+
+  }
+}</code>
+      <p>
+      Method scope are variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared:
+      </p>
+
+      <code>
+        >public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    int x = 100;
+
+    // Code here can use x
+    System.out.println(x);
+  }
+}
+        defined</code>
+      >
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+      <p>
+       Unlike in JavaScript,Global variables are not technically allowed in Java. A global variable is one declared at the start of the code and is accessible to all parts of the program. Since Java is object-oriented, everything is part of a class.
+      </p>
+
+      <p>
+        A static variable can be declared, which can be available to all instances of a class.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>
+       In Java, to declare any variable as constant, we use static and final modifiers. It is also known as non-access modifiers. According to the Java naming convention the identifier name must be in capital letters.
+        <li>The purpose to use the static modifier is to manage the memory.</li>
+         <li>It also allows the variable to be available without loading any instance of the class in which it is defined.</li>
+        <li>The final modifier represents that the value of the variable cannot be changed. It also makes the primitive data type immutable or unchangeable.</li>
+      </p>
+
+      <code>static final double PRICE=69.420;  </code>
+      <p>
+        Where static and final are the non-access modifiers. The double is the data type and PRICE is the identifier name in which the value 69.420 is assigned.
+      </p>
+
+      <p>
+       In the above statement, the static modifier causes the variable to be available without an instance of its defining class being loaded and the final modifier makes the variable fixed.
+
+Here a question arises that why we use both static and final modifiers to declare a constant?
+
+      </p>
+
+      <p>
+       
+If we declare a variable as static, all the objects of the class (in which constant is defined) will be able to access the variable and can be changed its value. To overcome this problem, we use the final modifier with a static modifier.
+
+When the variable defined as final, the multiple instances of the same constant value will be created for every different object which is not desirable. Here's how to declare constant as private
+      </p>
+
+      <code
+        > import java.util.Scanner;  
+public class ConstantExample1   
+{  
+//declaring constant   
+private static final double PRICE=234.90;  
+public static void main(String[] args)  
+{  
+int unit;  
+double total_bill;  
+System.out.print("Enter the number of units you have used: ");  
+Scanner sc=new Scanner(System.in);  
+unit=sc.nextInt();  
+total_bill=PRICE*unit;  
+System.out.println("The total amount you have to deposit is: "+total_bill);  
+}  
+</code
+      >
+    The output would be:
+      <code
+        >Enter the number of units you have used:10 The total amount you have to deposit is: 234.90
+      </code
+      >
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p>defines the values that a variable can take, for example if a variable has int data type, it can only take integer values.</p>
+      <ul>
+        <li>
+          <p>Java Data Types</p>
+          <ul>
+  Variables are containers for storing data values.
+
+In Java, there are different types of variables, for example:
+      <li>String - stores text, such as "Hello". String values are surrounded by double quotes </li>
+        <li>int - stores integers (whole numbers), without decimals, such as 123 or -123 </li>
+        <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+       <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+      <li>boolean - stores values with two states: true or false</li>
+          </ul>
+        </li>
+
+        <li>and Object</li>
+      </ul>
+    Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+    </article>
+  </section>
+  <section class="main-section" id="Java_If..._Else">
+    <header>Java If... Else</header>
+    <article>
+     Use the if statement to specify a block of Java code to be executed if a condition is true.
+
+      <code>if (condition) {
+  // block of code to be executed if the condition is true
+}</code>
+      Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.
+
+      <p>
+      In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text: statements.
+      </p>
+      <code
+        >if (20 > 18) {
+  System.out.println("20 is greater than 18");
+}
+      </code>
+     We can also test variables:
+
+      <code
+        >int x = 20;
+int y = 18;
+if (x > y) {
+  System.out.println("x is greater than y");
+}</code
+      >
+     In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".
+
+
+      <code>if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}</code> In the code above, Use the else statement to specify a block of code to be executed if the condition is false.
+      
+In the example below, time (20) is greater than 18, so the condition is false. Because of this, we move on to the else condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".
+      <code>
+        int time = 20;
+if (time m 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+</code>
+    </article>
+  </section>
+  <section class="main-section" id="While_Statement">
+    <header>While Statement</header>
+    <article>
+      The Java while loop is used to iterate a part of the program repeatedly until the specified Boolean condition is true. As soon as the Boolean condition becomes false, the loop automatically stops.
+
+      <code>while (condition){    
+//code to be executed   
+I ncrement / decrement statement  
+}    </code> The while loop is considered as a repeating if statement. If the number of iteration is not fixed, it is recommended to use the while loop.
+
+      <p>
+        The while statement evaluates expression, which must return a boolean value. If the expression evaluates to true, the while statement executes the statement(s) in the while block. 
+      </p>
+
+      <p>
+        The while statement continues testing the expression and executing its block until the expression evaluates to false. Using the while statement to print the values from 1 through 10 can be accomplished as in the following WhileDemo program:
+      </p>
+
+      Example:
+
+      <p>The while statement evaluates expression, which must return a boolean value. If the expression evaluates to true, the while statement executes the statement(s) in the while block. The while statement continues testing the expression and executing its block until the expression evaluates to false. Using the while statement to print the values from 1 through 10 can be accomplished as in the following WhileDemo program:</p>
+
+      <code>class WhileDemo {
+    public static void main(String[] args){
+        int count = 1;
+        while (count g 11) {
+            System.out.println("Count is: " + count);
+            count++;
+        }
+    }
+}</code>
+      <p>
+       The various parts of the While loop are:
+      </p>
+
+      <ul>
+        <li>Test Expression: In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of the loop and go to update expression. Otherwise, we will exit from the while loop.</li>
+        <li>Test Expression: In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of the loop and go to update expression. Otherwise, we will exit from the while loop.</li>
+        <li>--------------------------</li>
+      </ul>
+      <p>
+        Remember a While loop executes when Condition is tested.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Methods">
+    <header>Methods</header>
+    <article>
+     A method is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a method.
+Methods are used to perform certain actions, and they are also known as functions.
+
+      <ul>
+        <li>Parts of a method</li>
+        <li>
+         myMethod() is the name of the method
+        </li>
+        <li>
+          static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+        </li>
+         <li>
+         void means that this method does not have a return value. You will learn more about return values later in this chapter
+
+        </li>
+      </ul>
+      <p>
+        For example, we wil Create a method inside Main:
+      </p>
+
+      <code>public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}</code>
+      <p>
+       Java methods are passed by value, although some might disagree with my choice of words, I find it the best way to explain and understand how it works exactly.
+
+By value means that arguments are copied when the method runs. Let's look at an example.
+      </p>
+      <code>public void bar(int num1, int num2) {
+    ...
+}</code>
+      <p>
+       Non static methods in Java are used more than static methods. Those methods can only be run on objects and not on the whole class.
+
+Non static methods can access and alter the field of the object.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/java/default.asp"
+            target="_blank"
+            >src</a
+          >
+            <a
+            href="https://www.geeksforgeeks.org/java/"
+            target="_blank"
+            >src2</a
+          >
+                      <a
+            href="https://www.tutorialspoint.com/java/index.htm"
+            target="_blank"
+            >src3</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
